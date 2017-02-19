@@ -28,7 +28,6 @@
 
 @property (strong, nonatomic) NSDate *fromDate;
 @property (strong, nonatomic) NSDate *toDate;
-@property (assign, nonatomic) BOOL firstTimeAppear;
 
 + (APIManager*)sharedManager;
 + (id)allocWithZone:(NSZone *)zone;
@@ -36,6 +35,8 @@
 
 - (void)createDateIntervalFromDate:(NSDate *)fromDate toDate:(NSDate *) toDate;
 
-- (NSArray *)getCourseFromDate:(NSDate *) date;
+- (NSDictionary *)getCourseFromDate:(NSDate *) date;
+
+- (NSMutableArray *)createArrayOfDictionariesWithCourses;
 
 @end

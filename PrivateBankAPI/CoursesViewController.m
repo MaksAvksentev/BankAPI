@@ -34,6 +34,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSDate *currentDate;
+@property (strong, nonnull) NSMutableArray* coursesArray;
 
 @end
 
@@ -42,6 +43,9 @@
 - (void)viewDidLoad{
 
     [super viewDidLoad];
+    
+    self.coursesArray = [API_MANAGER createArrayOfDictionariesWithCourses];
+    
     self.currentDate = [API_MANAGER fromDate];
 }
 
@@ -57,13 +61,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 6;
+    return 3;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    return [calendar daysWithinEraFromDate:[API_MANAGER fromDate] toDate:[API_MANAGER toDate]] + 1;
+    return [calendar daysWithinEraFromDate:[API_MANAGER fromDate] toDate:[API_MANAGER toDate]];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -80,24 +84,30 @@
     NSCalendar *theCalendar = [NSCalendar currentCalendar];
     
     NSDate *nextDate = [theCalendar dateByAddingComponents:dayComponent toDate:self.currentDate options:0];
-    NSLog(@"%@",[API_MANAGER getCourseFromDate:self.currentDate]);
+
+    /*
     NSDictionary *dict = [NSDictionary dictionary];
     NSInteger index = indexPath.row;
     
-    /*
+    
     do{
         dict = [NSDictionary dictionaryWithDictionary:[[API_MANAGER getCourseFromDate:self.currentDate] objectAtIndex:index]];
         index++;
     }while (![dict objectForKey:@"purchaseRate"]);
     */
-    NSLog(@"%@", dict);
-
-    [cell initWithCourse:[[API_MANAGER getCourseFromDate:self.currentDate] objectAtIndex:index]];
+    
+    //NSLog(@"%@", [[self.coursesArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row]);
+    [cell initWithCourse:[[self.coursesArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row]];
     
     
     self.currentDate = nextDate;
 
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+   // NSLog(@"%@", [[self.coursesArray objectAtIndex:section] objectForKey:@"currentDate"]);
+    return [[[[self.coursesArray objectAtIndex:section] objectAtIndex:0] objectForKey:@"currentDate"] stringDateWithNeedFormat];
 }
 
 @end

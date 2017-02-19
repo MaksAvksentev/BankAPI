@@ -126,16 +126,16 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hgH-8Z-ExW" id="Y7c-ot-AeN">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZh-1v-3o4">
-                                                    <rect key="frame" x="8" y="30" width="105" height="39"/>
+                                                    <rect key="frame" x="8" y="30" width="135" height="39"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <attributedString key="attributedText">
-                                                        <fragment content="UAH to USD">
+                                                        <fragment content="Label">
                                                             <attributes>
-                                                                <font key="NSFont" size="18" name="AmericanTypewriter"/>
+                                                                <font key="NSFont" size="22" name="AmericanTypewriter"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -180,6 +180,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="convertFromTo" destination="PZh-1v-3o4" id="dOj-Eq-NJa"/>
                                             <outlet property="purchaseRate" destination="CFO-J9-V35" id="iq8-eE-yOW"/>
                                             <outlet property="saleRate" destination="SCO-in-VAc" id="RUe-p9-nBD"/>
                                         </connections>

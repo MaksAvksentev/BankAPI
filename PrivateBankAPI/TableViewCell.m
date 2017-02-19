@@ -11,6 +11,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *purchaseRate;
 @property (weak, nonatomic) IBOutlet UILabel *saleRate;
+@property (weak, nonatomic) IBOutlet UILabel *convertFromTo;
 
 @end
 
@@ -23,8 +24,30 @@
 
 - (void)initWithCourse:(NSDictionary *) dictionary{
     
-        self.purchaseRate.text = [NSString stringWithFormat:@"%1.2d",[dictionary objectForKey:@"purchaseRateNB"]];
-        //self.saleRate.text = [dictionary objectForKey:@"saleRateNB"];
+    
+    NSString *key = [[NSString alloc] init];
+    
+    self.convertFromTo.text = [NSString stringWithFormat:@"UAH to %@", [NSString stringWithFormat:@"%@", [dictionary objectForKey:@"currency"]]];
+    
+    if ([dictionary objectForKey:@"purchaseRate"]) {
+        
+        key = @"purchaseRate";
+    }else{
+    
+        key = @"purchaseRateNB";
+    }
+    
+    self.purchaseRate.text = [NSString stringWithFormat:@"%@", [dictionary objectForKey:key]];
+    
+    if ([dictionary objectForKey:@"saleRate"]){
+        
+        key = @"saleRate";
+    }else{
+    
+        key = @"saleRateNB";
+    }
+    
+    self.saleRate.text = [NSString stringWithFormat:@"%@",[dictionary objectForKey:key]];
 }
 
 @end
