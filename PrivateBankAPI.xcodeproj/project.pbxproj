@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		281988BD1E5894C500645669 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988BC1E5894C500645669 /* main.m */; };
+		281988C01E5894C500645669 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988BF1E5894C500645669 /* AppDelegate.m */; };
+		281988C61E5894C500645669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281988C41E5894C500645669 /* Main.storyboard */; };
+		281988C81E5894C500645669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281988C71E5894C500645669 /* Assets.xcassets */; };
+		281988CB1E5894C500645669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281988C91E5894C500645669 /* LaunchScreen.storyboard */; };
+		281988D31E58E61800645669 /* PrivatBank.png in Resources */ = {isa = PBXBuildFile; fileRef = 281988D21E58E61800645669 /* PrivatBank.png */; };
+		281988D61E58E90C00645669 /* BankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988D51E58E90C00645669 /* BankViewController.m */; };
+		281988DA1E58E93900645669 /* CoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988D91E58E93900645669 /* CoursesViewController.m */; };
+		281988DD1E59766000645669 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988DC1E59766000645669 /* APIManager.m */; };
+		281988EF1E59816500645669 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988E31E59816500645669 /* AFHTTPSessionManager.m */; };
+		281988F01E59816500645669 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988E61E59816500645669 /* AFNetworkReachabilityManager.m */; };
+		281988F11E59816500645669 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988E81E59816500645669 /* AFSecurityPolicy.m */; };
+		281988F21E59816500645669 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988EA1E59816500645669 /* AFURLRequestSerialization.m */; };
+		281988F31E59816500645669 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988EC1E59816500645669 /* AFURLResponseSerialization.m */; };
+		281988F41E59816500645669 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988EE1E59816500645669 /* AFURLSessionManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		281988B81E5894C500645669 /* PrivateBankAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivateBankAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		281988BC1E5894C500645669 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		281988BE1E5894C500645669 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		281988BF1E5894C500645669 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		281988C51E5894C500645669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		281988C71E5894C500645669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		281988CA1E5894C500645669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		281988CC1E5894C500645669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		281988D21E58E61800645669 /* PrivatBank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PrivatBank.png; sourceTree = "<group>"; };
+		281988D41E58E90C00645669 /* BankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BankViewController.h; path = ../BankViewController.h; sourceTree = "<group>"; };
+		281988D51E58E90C00645669 /* BankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BankViewController.m; path = ../BankViewController.m; sourceTree = "<group>"; };
+		281988D81E58E93900645669 /* CoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesViewController.h; sourceTree = "<group>"; };
+		281988D91E58E93900645669 /* CoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesViewController.m; sourceTree = "<group>"; };
+		281988DB1E59766000645669 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		281988DC1E59766000645669 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		281988E01E597C6E00645669 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		281988E21E59816500645669 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		281988E31E59816500645669 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		281988E41E59816500645669 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		281988E51E59816500645669 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		281988E61E59816500645669 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		281988E71E59816500645669 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		281988E81E59816500645669 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		281988E91E59816500645669 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		281988EA1E59816500645669 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		281988EB1E59816500645669 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		281988EC1E59816500645669 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		281988ED1E59816500645669 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		281988EE1E59816500645669 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		281988B51E5894C500645669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		281988AF1E5894C500645669 = {
+			isa = PBXGroup;
+			children = (
+				281988BA1E5894C500645669 /* PrivateBankAPI */,
+				281988B91E5894C500645669 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		281988B91E5894C500645669 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				281988B81E5894C500645669 /* PrivateBankAPI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		281988BA1E5894C500645669 /* PrivateBankAPI */ = {
+			isa = PBXGroup;
+			children = (
+				281988E11E59816500645669 /* AFNetworking */,
+				281988BE1E5894C500645669 /* AppDelegate.h */,
+				281988BF1E5894C500645669 /* AppDelegate.m */,
+				281988DB1E59766000645669 /* APIManager.h */,
+				281988DC1E59766000645669 /* APIManager.m */,
+				281988D71E58E91D00645669 /* Controllers */,
+				281988C41E5894C500645669 /* Main.storyboard */,
+				281988C71E5894C500645669 /* Assets.xcassets */,
+				281988C91E5894C500645669 /* LaunchScreen.storyboard */,
+				281988CC1E5894C500645669 /* Info.plist */,
+				281988BB1E5894C500645669 /* Supporting Files */,
+				281988E01E597C6E00645669 /* Constants.h */,
+			);
+			path = PrivateBankAPI;
+			sourceTree = "<group>";
+		};
+		281988BB1E5894C500645669 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				281988D21E58E61800645669 /* PrivatBank.png */,
+				281988BC1E5894C500645669 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		281988D71E58E91D00645669 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				281988D41E58E90C00645669 /* BankViewController.h */,
+				281988D51E58E90C00645669 /* BankViewController.m */,
+				281988D81E58E93900645669 /* CoursesViewController.h */,
+				281988D91E58E93900645669 /* CoursesViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		281988E11E59816500645669 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				281988E21E59816500645669 /* AFHTTPSessionManager.h */,
+				281988E31E59816500645669 /* AFHTTPSessionManager.m */,
+				281988E41E59816500645669 /* AFNetworking.h */,
+				281988E51E59816500645669 /* AFNetworkReachabilityManager.h */,
+				281988E61E59816500645669 /* AFNetworkReachabilityManager.m */,
+				281988E71E59816500645669 /* AFSecurityPolicy.h */,
+				281988E81E59816500645669 /* AFSecurityPolicy.m */,
+				281988E91E59816500645669 /* AFURLRequestSerialization.h */,
+				281988EA1E59816500645669 /* AFURLRequestSerialization.m */,
+				281988EB1E59816500645669 /* AFURLResponseSerialization.h */,
+				281988EC1E59816500645669 /* AFURLResponseSerialization.m */,
+				281988ED1E59816500645669 /* AFURLSessionManager.h */,
+				281988EE1E59816500645669 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		281988B71E5894C500645669 /* PrivateBankAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 281988CF1E5894C500645669 /* Build configuration list for PBXNativeTarget "PrivateBankAPI" */;
+			buildPhases = (
+				281988B41E5894C500645669 /* Sources */,
+				281988B51E5894C500645669 /* Frameworks */,
+				281988B61E5894C500645669 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrivateBankAPI;
+			productName = PrivateBankAPI;
+			productReference = 281988B81E5894C500645669 /* PrivateBankAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		281988B01E5894C500645669 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Maksim Avksentev";
+				TargetAttributes = {
+					281988B71E5894C500645669 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 35V6GQM32H;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 281988B31E5894C500645669 /* Build configuration list for PBXProject "PrivateBankAPI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 281988AF1E5894C500645669;
+			productRefGroup = 281988B91E5894C500645669 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				281988B71E5894C500645669 /* PrivateBankAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		281988B61E5894C500645669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281988CB1E5894C500645669 /* LaunchScreen.storyboard in Resources */,
+				281988C81E5894C500645669 /* Assets.xcassets in Resources */,
+				281988C61E5894C500645669 /* Main.storyboard in Resources */,
+				281988D31E58E61800645669 /* PrivatBank.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		281988B41E5894C500645669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281988F21E59816500645669 /* AFURLRequestSerialization.m in Sources */,
+				281988C01E5894C500645669 /* AppDelegate.m in Sources */,
+				281988DA1E58E93900645669 /* CoursesViewController.m in Sources */,
+				281988BD1E5894C500645669 /* main.m in Sources */,
+				281988F41E59816500645669 /* AFURLSessionManager.m in Sources */,
+				281988F31E59816500645669 /* AFURLResponseSerialization.m in Sources */,
+				281988F01E59816500645669 /* AFNetworkReachabilityManager.m in Sources */,
+				281988F11E59816500645669 /* AFSecurityPolicy.m in Sources */,
+				281988EF1E59816500645669 /* AFHTTPSessionManager.m in Sources */,
+				281988D61E58E90C00645669 /* BankViewController.m in Sources */,
+				281988DD1E59766000645669 /* APIManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		281988C41E5894C500645669 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				281988C51E5894C500645669 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		281988C91E5894C500645669 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				281988CA1E5894C500645669 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		281988CD1E5894C500645669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		281988CE1E5894C500645669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		281988D01E5894C500645669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 35V6GQM32H;
+				INFOPLIST_FILE = PrivateBankAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Avksentev.PrivateBankAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		281988D11E5894C500645669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 35V6GQM32H;
+				INFOPLIST_FILE = PrivateBankAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Avksentev.PrivateBankAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		281988B31E5894C500645669 /* Build configuration list for PBXProject "PrivateBankAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281988CD1E5894C500645669 /* Debug */,
+				281988CE1E5894C500645669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		281988CF1E5894C500645669 /* Build configuration list for PBXNativeTarget "PrivateBankAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281988D01E5894C500645669 /* Debug */,
+				281988D11E5894C500645669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 281988B01E5894C500645669 /* Project object */;
+}
