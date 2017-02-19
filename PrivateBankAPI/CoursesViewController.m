@@ -9,16 +9,95 @@
 #import "CoursesViewController.h"
 #import "APIManager.h"
 #import "Constants.h"
-@interface CoursesViewController ()
+#import "TableViewCell.h"
+
+@interface NSCalendar (MySpecialCalculations)
+
+-(NSInteger)daysWithinEraFromDate:(NSDate *) startDate toDate:(NSDate *) endDate;
+
+@end
+
+@implementation NSCalendar (MySpecialCalculations)
+
+-(NSInteger)daysWithinEraFromDate:(NSDate *) startDate toDate:(NSDate *) endDate {
+    
+    NSInteger startDay=[self ordinalityOfUnit:NSDayCalendarUnit inUnit: NSEraCalendarUnit forDate:startDate];
+    
+    NSInteger endDay=[self ordinalityOfUnit:NSDayCalendarUnit inUnit: NSEraCalendarUnit forDate:endDate];
+    
+    return endDay-startDay;
+}
+
+@end
+
+@interface CoursesViewController () <UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSDate *currentDate;
 
 @end
 
 @implementation CoursesViewController
 
-- (void)viewDidLoad {
-    
+- (void)viewDidLoad{
+
     [super viewDidLoad];
-    [API_MANAGER getCourseFromDate:[API_MANAGER fromDate]];
+    self.currentDate = [API_MANAGER fromDate];
+}
+
+- (IBAction)backToIntervalChoosing:(id)sender {
+    
+    //NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    //NSLog(@"%ld", [calendar daysWithinEraFromDate:[API_MANAGER fromDate] toDate:[API_MANAGER toDate]] + 1);
+    [self performSegueWithIdentifier:@"CourseViewToBankView" sender:self];
+}
+
+#pragma mark - UITableViewDataSource
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 6;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    return [calendar daysWithinEraFromDate:[API_MANAGER fromDate] toDate:[API_MANAGER toDate]] + 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    TableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    
+    if (!cell) {
+        cell = [[TableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+    }
+    
+    NSDateComponents *dayComponent = [[NSDateComponents alloc] init];
+    dayComponent.day = 1;
+    
+    NSCalendar *theCalendar = [NSCalendar currentCalendar];
+    
+    NSDate *nextDate = [theCalendar dateByAddingComponents:dayComponent toDate:self.currentDate options:0];
+    NSLog(@"%@",[API_MANAGER getCourseFromDate:self.currentDate]);
+    NSDictionary *dict = [NSDictionary dictionary];
+    NSInteger index = indexPath.row;
+    
+    /*
+    do{
+        dict = [NSDictionary dictionaryWithDictionary:[[API_MANAGER getCourseFromDate:self.currentDate] objectAtIndex:index]];
+        index++;
+    }while (![dict objectForKey:@"purchaseRate"]);
+    */
+    NSLog(@"%@", dict);
+
+    [cell initWithCourse:[[API_MANAGER getCourseFromDate:self.currentDate] objectAtIndex:index]];
+    
+    
+    self.currentDate = nextDate;
+
+    return cell;
 }
 
 @end

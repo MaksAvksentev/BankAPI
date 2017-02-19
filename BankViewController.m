@@ -20,18 +20,9 @@
 
 @implementation BankViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-}
-
 - (IBAction)calculateAction:(id)sender {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"dd.MM.yyyy"];
-    [API_MANAGER createDateIntervalFromDate:[NSString stringWithString:[dateFormatter stringFromDate:self.fromPicker.date]] toDate:[NSString stringWithString:[dateFormatter stringFromDate:self.toPicker.date]]];
+    [API_MANAGER createDateIntervalFromDate:self.fromPicker.date toDate:self.toPicker.date];
     [self performSegueWithIdentifier:@"BankViewToCourseView" sender:self];
 }
-
-
 
 @end

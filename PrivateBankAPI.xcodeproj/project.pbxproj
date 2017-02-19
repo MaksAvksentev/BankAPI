@@ -16,12 +16,8 @@
 		281988D61E58E90C00645669 /* BankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988D51E58E90C00645669 /* BankViewController.m */; };
 		281988DA1E58E93900645669 /* CoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988D91E58E93900645669 /* CoursesViewController.m */; };
 		281988DD1E59766000645669 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988DC1E59766000645669 /* APIManager.m */; };
-		281988EF1E59816500645669 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988E31E59816500645669 /* AFHTTPSessionManager.m */; };
-		281988F01E59816500645669 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988E61E59816500645669 /* AFNetworkReachabilityManager.m */; };
-		281988F11E59816500645669 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988E81E59816500645669 /* AFSecurityPolicy.m */; };
-		281988F21E59816500645669 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988EA1E59816500645669 /* AFURLRequestSerialization.m */; };
-		281988F31E59816500645669 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988EC1E59816500645669 /* AFURLResponseSerialization.m */; };
-		281988F41E59816500645669 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 281988EE1E59816500645669 /* AFURLSessionManager.m */; };
+		28CF13A71E59C228000CB018 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CF13A61E59C228000CB018 /* TableViewCell.m */; };
+		9F2885118295FE7EDE44A370 /* Pods_PrivateBankAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFBE59E33ACDBD152DE29BB /* Pods_PrivateBankAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,19 +37,11 @@
 		281988DB1E59766000645669 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
 		281988DC1E59766000645669 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		281988E01E597C6E00645669 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		281988E21E59816500645669 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		281988E31E59816500645669 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		281988E41E59816500645669 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		281988E51E59816500645669 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		281988E61E59816500645669 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		281988E71E59816500645669 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
-		281988E81E59816500645669 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
-		281988E91E59816500645669 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		281988EA1E59816500645669 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		281988EB1E59816500645669 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		281988EC1E59816500645669 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		281988ED1E59816500645669 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
-		281988EE1E59816500645669 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		28CF13A51E59C228000CB018 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		28CF13A61E59C228000CB018 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		8E38EA9ACD19420C9FC2E75A /* Pods-PrivateBankAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivateBankAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrivateBankAPI/Pods-PrivateBankAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		957BB0BF3930EC7FEB789DC6 /* Pods-PrivateBankAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivateBankAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrivateBankAPI/Pods-PrivateBankAPI.release.xcconfig"; sourceTree = "<group>"; };
+		BEFBE59E33ACDBD152DE29BB /* Pods_PrivateBankAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrivateBankAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F2885118295FE7EDE44A370 /* Pods_PrivateBankAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +61,8 @@
 			children = (
 				281988BA1E5894C500645669 /* PrivateBankAPI */,
 				281988B91E5894C500645669 /* Products */,
+				3E60BCFB18F0A28CE59ED783 /* Pods */,
+				CFFF62436E08EBF221A2D959 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,11 +77,11 @@
 		281988BA1E5894C500645669 /* PrivateBankAPI */ = {
 			isa = PBXGroup;
 			children = (
-				281988E11E59816500645669 /* AFNetworking */,
 				281988BE1E5894C500645669 /* AppDelegate.h */,
 				281988BF1E5894C500645669 /* AppDelegate.m */,
 				281988DB1E59766000645669 /* APIManager.h */,
 				281988DC1E59766000645669 /* APIManager.m */,
+				28CF13A41E59C201000CB018 /* UI */,
 				281988D71E58E91D00645669 /* Controllers */,
 				281988C41E5894C500645669 /* Main.storyboard */,
 				281988C71E5894C500645669 /* Assets.xcassets */,
@@ -122,24 +113,30 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		281988E11E59816500645669 /* AFNetworking */ = {
+		28CF13A41E59C201000CB018 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				281988E21E59816500645669 /* AFHTTPSessionManager.h */,
-				281988E31E59816500645669 /* AFHTTPSessionManager.m */,
-				281988E41E59816500645669 /* AFNetworking.h */,
-				281988E51E59816500645669 /* AFNetworkReachabilityManager.h */,
-				281988E61E59816500645669 /* AFNetworkReachabilityManager.m */,
-				281988E71E59816500645669 /* AFSecurityPolicy.h */,
-				281988E81E59816500645669 /* AFSecurityPolicy.m */,
-				281988E91E59816500645669 /* AFURLRequestSerialization.h */,
-				281988EA1E59816500645669 /* AFURLRequestSerialization.m */,
-				281988EB1E59816500645669 /* AFURLResponseSerialization.h */,
-				281988EC1E59816500645669 /* AFURLResponseSerialization.m */,
-				281988ED1E59816500645669 /* AFURLSessionManager.h */,
-				281988EE1E59816500645669 /* AFURLSessionManager.m */,
+				28CF13A51E59C228000CB018 /* TableViewCell.h */,
+				28CF13A61E59C228000CB018 /* TableViewCell.m */,
 			);
-			path = AFNetworking;
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3E60BCFB18F0A28CE59ED783 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E38EA9ACD19420C9FC2E75A /* Pods-PrivateBankAPI.debug.xcconfig */,
+				957BB0BF3930EC7FEB789DC6 /* Pods-PrivateBankAPI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CFFF62436E08EBF221A2D959 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEFBE59E33ACDBD152DE29BB /* Pods_PrivateBankAPI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 281988CF1E5894C500645669 /* Build configuration list for PBXNativeTarget "PrivateBankAPI" */;
 			buildPhases = (
+				AFADCD2947A7C029FA3189FF /* [CP] Check Pods Manifest.lock */,
 				281988B41E5894C500645669 /* Sources */,
 				281988B51E5894C500645669 /* Frameworks */,
 				281988B61E5894C500645669 /* Resources */,
+				288571B04C2634823EF5D3CB /* [CP] Embed Pods Frameworks */,
+				5887C1B3DB686C483A55FF7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,20 +210,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		288571B04C2634823EF5D3CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrivateBankAPI/Pods-PrivateBankAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5887C1B3DB686C483A55FF7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrivateBankAPI/Pods-PrivateBankAPI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFADCD2947A7C029FA3189FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		281988B41E5894C500645669 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				281988F21E59816500645669 /* AFURLRequestSerialization.m in Sources */,
 				281988C01E5894C500645669 /* AppDelegate.m in Sources */,
+				28CF13A71E59C228000CB018 /* TableViewCell.m in Sources */,
 				281988DA1E58E93900645669 /* CoursesViewController.m in Sources */,
 				281988BD1E5894C500645669 /* main.m in Sources */,
-				281988F41E59816500645669 /* AFURLSessionManager.m in Sources */,
-				281988F31E59816500645669 /* AFURLResponseSerialization.m in Sources */,
-				281988F01E59816500645669 /* AFNetworkReachabilityManager.m in Sources */,
-				281988F11E59816500645669 /* AFSecurityPolicy.m in Sources */,
-				281988EF1E59816500645669 /* AFHTTPSessionManager.m in Sources */,
 				281988D61E58E90C00645669 /* BankViewController.m in Sources */,
 				281988DD1E59766000645669 /* APIManager.m in Sources */,
 			);
@@ -341,6 +384,7 @@
 		};
 		281988D01E5894C500645669 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E38EA9ACD19420C9FC2E75A /* Pods-PrivateBankAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 35V6GQM32H;
@@ -353,6 +397,7 @@
 		};
 		281988D11E5894C500645669 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 957BB0BF3930EC7FEB789DC6 /* Pods-PrivateBankAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 35V6GQM32H;
@@ -382,6 +427,7 @@
 				281988D11E5894C500645669 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

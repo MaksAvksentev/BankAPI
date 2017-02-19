@@ -8,17 +8,34 @@
 
 #import <Foundation/Foundation.h>
 
+@interface NSDate (NeedDateFormat)
+
+- (NSString *)stringDateWithNeedFormat;
+
+@end
+
+@implementation NSDate (NeedDateFormat)
+
+- (NSString *)stringDateWithNeedFormat{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"dd.MM.yyyy"];
+    return [NSString stringWithString:[dateFormatter stringFromDate:self]];
+}
+
+@end
+
 @interface APIManager : NSObject
 
-@property (strong, nonatomic) NSString *fromDate;
-@property (strong, nonatomic) NSString *toDate;
+@property (strong, nonatomic) NSDate *fromDate;
+@property (strong, nonatomic) NSDate *toDate;
+@property (assign, nonatomic) BOOL firstTimeAppear;
 
 + (APIManager*)sharedManager;
 + (id)allocWithZone:(NSZone *)zone;
 - (id)copy;
 
-- (void)createDateIntervalFromDate:(NSString *)fromDate toDate:(NSString *) toDate;
+- (void)createDateIntervalFromDate:(NSDate *)fromDate toDate:(NSDate *) toDate;
 
-- (void)getCourseFromDate:(NSString *) date;
+- (NSArray *)getCourseFromDate:(NSDate *) date;
 
 @end

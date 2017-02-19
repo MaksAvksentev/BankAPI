@@ -7,11 +7,15 @@
 //
 
 #import "APIManager.h"
-#import "AFNetworking.h"
+#import "AFNetworking/AFNetworking.h"
+
+
+
 
 @interface APIManager ()
 
 @property (strong, nonatomic) NSURLSession *session;
+
 @end
 
 @implementation APIManager
@@ -44,7 +48,7 @@
 }
 
 
-- (void)createDateIntervalFromDate:(NSString *)fromDate toDate:(NSString *) toDate {
+- (void)createDateIntervalFromDate:(NSDate *)fromDate toDate:(NSDate *) toDate {
 
     self.fromDate = fromDate;
     self.toDate= toDate;
@@ -62,17 +66,17 @@
     return data;
 }
 
-- (void)getCourseFromDate:(NSString *) date{
-
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithDictionary:@{ @"date"       : date}];
+- (NSDictionary *)getCourseFromDate:(NSDate *) date{
+    
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithDictionary:@{ @"date"       : [date stringDateWithNeedFormat]}];
                                                                                        
     
     NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"GET"
                                                                                  URLString:@"https://api.privatbank.ua/p24api/exchange_rates?json&"
                                                                                 parameters:parameters
                                                                                      error:nil];
-    NSLog(@"%@", request);
-    NSLog(@"%@", [[self sendRequest:request] objectForKey:@"exchangeRate"]);
+    NSLog(@"%@221", request);
+    return [[self sendRequest:request] objectForKey:@"exchangeRate"];
 }
 
 
